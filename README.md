@@ -70,37 +70,37 @@ Routes
     Add a Contact
     POST /contacts
     Request Body:
-
-{
-  "name": "John Doe",
-  "email": "johndoe@example.com"
-}
+    
+    {
+      "name": "John Doe",
+      "email": "johndoe@example.com"
+    }
 
 Response:
 
-{
-  "message": "Contact added successfully",
-  "contact": {
-    "name": "John Doe",
-    "email": "johndoe@example.com",
-    "_id": "12345"
-  }
-}
+    {
+      "message": "Contact added successfully",
+      "contact": {
+        "name": "John Doe",
+        "email": "johndoe@example.com",
+        "_id": "12345"
+      }
+    }
 
 Get All Contacts
 GET /contacts
 Response:
-
-{
-  "message": "Contacts fetched successfully",
-  "contacts": [
+    
     {
-      "name": "John Doe",
-      "email": "johndoe@example.com",
-      "_id": "12345"
+      "message": "Contacts fetched successfully",
+      "contacts": [
+        {
+          "name": "John Doe",
+          "email": "johndoe@example.com",
+          "_id": "12345"
+        }
+      ]
     }
-  ]
-}
 
 Search Contacts
 GET /contacts/search?query=<search_query>
@@ -119,21 +119,21 @@ Response:
 
 Directory Structure
 
-contact-list-manager/
-├── backend/
-│   ├── server.js
-│   ├── package.json
-│   ├── package-lock.json
-│   └── .gitignore
-├── frontend/
-│   ├── src/
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── components/
-│   ├── package.json
-│   ├── package-lock.json
-│   └── .gitignore
-└── README.md
+    contact-list-manager/
+    ├── backend/
+    │   ├── server.js
+    │   ├── package.json
+    │   ├── package-lock.json
+    │   └── .gitignore
+    ├── frontend/
+    │   ├── src/
+    │   │   ├── App.js
+    │   │   ├── index.js
+    │   │   └── components/
+    │   ├── package.json
+    │   ├── package-lock.json
+    │   └── .gitignore
+    └── README.md
 
 Troubleshooting
 
