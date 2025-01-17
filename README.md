@@ -152,3 +152,38 @@ If npm start doesn't work, ensure all dependencies are installed:
 
     npm install
 
+
+Approach and Design Decisions
+Approach
+
+    Backend:
+        A RESTful API was developed using Express.js to handle requests from the frontend.
+        MongoDB was used as the database, and Mongoose was employed for schema modeling.
+        Clear separation of concerns was maintained: the backend is responsible for data storage and retrieval, while the frontend handles presentation.
+
+    Frontend:
+        Built with React to create a responsive and dynamic UI.
+        Axios was used for API communication to perform CRUD operations.
+        React state management was used to dynamically update the UI based on user actions and server responses.
+
+    API Endpoints:
+        Endpoints for adding, retrieving, and searching contacts were designed.
+        Validation checks were implemented in the backend to ensure unique emails.
+
+Design Decisions
+
+    Database:
+        MongoDB was chosen for its flexibility and JSON-like document storage, which is ideal for handling contact records.
+        Unique constraints were applied to the email field to ensure data integrity.
+
+    Backend Validation:
+        Validation logic was implemented in the backend to prevent duplicate email entries and handle errors gracefully.
+        Error handling provides meaningful feedback to the frontend, improving user experience.
+
+    Frontend Communication:
+        Axios was selected for its ease of use and support for promises, making API requests straightforward.
+        Use of React state ensures real-time updates when data changes.
+
+    Trade-offs:
+        Single Backend Port: The backend server listens on a single port (5002), simplifying deployment but requiring CORS for cross-origin requests during development.
+        MongoDB Local Setup: Requires MongoDB to be running locally, which might not be ideal for production. Switching to a cloud database like MongoDB Atlas in production is a viable option.
