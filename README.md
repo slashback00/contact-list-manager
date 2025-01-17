@@ -49,11 +49,11 @@ Frontend Setup
 
     Navigate to the frontend folder:
 
-cd frontend
+    cd frontend
 
 Install dependencies:
 
-npm install
+    npm install
 
 Start the React development server:
 
@@ -64,7 +64,7 @@ Start the React development server:
 API Endpoints
 Base URL
 
-http://localhost:5002
+    http://localhost:5002
 Routes
 
     Add a Contact
@@ -145,10 +145,10 @@ mongod --dbpath ~/data/db
 Backend server not starting
 Check for any errors when running:
 
-npx nodemon server.js
+    npx nodemon server.js
 
 Frontend issues
 If npm start doesn't work, ensure all dependencies are installed:
 
-npm install
+    npm install
 
