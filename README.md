@@ -37,7 +37,7 @@ cd backend
 
 Install dependencies:
 
-npm install
+    npm install
 
 Start the server:
 
